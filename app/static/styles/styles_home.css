@@ -1,28 +1,46 @@
 
 
-
-/* Fonts-Family (balumo) */
-
-*
- {
+:root {
+      /* Fonts-Family (Poppins) */
+      --Fonts-Poppis-400:  'Poppins', sans-serif;
+      /* Fonts-Family (Agbalumo) */
+      --Fonts-Agbalumo-400: 'Agbalumo', sans-serif;
+    }
+    
+*{
       padding: 0;
       margin: 0;
       box-sizing: border-box;
 }
-.Agbalumo_Font_Style 
-{
-      font-family: Agbalumo, sans-serif;
+::-webkit-scrollbar {
+      width: 1px;
+    }
+.Poppins_Font_style{
+      font-family: 'Poppins', sans-serif;
 }
-.blur 
-{
+.Agbalumo_Font_Style {
+      font-family: var(--Fonts-Agbalumo-400);
+}
+.blur {
       -webkit-backdrop-filter: blur(30px);
       backdrop-filter: blur(30px); 
 }
-nav
-{
+nav{
       position: fixed;
       top: 0;
       left: 0;
       z-index: 999;
+}
+/* Links */
+.a{
+      color: black;
+      text-decoration: none;
+      font-family: var(--Fonts-Poppis-400);
+      font-size: 14px;
+      padding: 4px;
+}
+/* Btn-ordenar */
+.btn-ordenar{
+      border: solid rgb(184, 184, 184) 1px;
 }
     
